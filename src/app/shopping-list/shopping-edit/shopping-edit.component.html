@@ -6,15 +6,25 @@
           <form>
             <fieldset class="form-group">
               <label for="name"><h6>Name</h6></label>
-              <input type="text" class="form-control" id="name" placeholder="Insert a name">
+              <input 
+                type="text" 
+                class="form-control" 
+                id="name" 
+                placeholder="Insert a name"
+                #nameInput>
             </fieldset>
             <fieldset class="form-group">
               <label for="amount"><h6>Amount</h6></label>
-              <input type="number" class="form-control" id="amount" placeholder="Insert amount">
+              <input 
+                type="number" 
+                class="form-control" 
+                id="amount" 
+                placeholder="Insert amount"
+                #amountInput>
             </fieldset>
             <div class="row">
               <div class="col-md-12">
-                <button type="submit" class="btn btn-success mr-2">Add</button>
+                <button type="submit" class="btn btn-success mr-2" (click)="onAdditem()">Add</button>
                 <button type="button" class="btn btn-danger mr-2">Delete</button>
                 <button type="button" class="btn btn-primary">Clear</button>
               </div>
