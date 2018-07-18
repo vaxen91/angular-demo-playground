@@ -10,7 +10,7 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
 
   recipes: Recipe[] = [
-    new Recipe('A test recipe', 'test description',
+    new Recipe('demooo', 'test description',
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFXfwUNVbrA9Z3NY4NXPxhIo9Ggxipbz-4Clt08_U04YvoKBI'
     ),
     new Recipe('A test recipe', 'test description',
